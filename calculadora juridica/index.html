@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos Jurídicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculos Jurídicos</h1>
+        
+        <div class="calc-section">
+            <h2>Cálculo de Honorários Advocatícios</h2>
+            <label for="valorCausa">Valor da Causa:</label>
+            <input type="number" id="valorCausa" placeholder="R$">
+            <label for="percentualHonorarios">Percentual de Honorários (%):</label>
+            <input type="number" id="percentualHonorarios" placeholder="%">
+            <button onclick="calcularHonorarios()">Calcular Honorários</button>
+            <p id="resultadoHonorarios"></p>
+        </div>
+
+        <div class="calc-section">
+            <h2>Cálculo de Juros Simples</h2>
+            <label for="capital">Capital (R$):</label>
+            <input type="number" id="capital" placeholder="R$">
+            <label for="taxaJuros">Taxa de Juros (%):</label>
+            <input type="number" id="taxaJuros" placeholder="%">
+            <label for="tempo">Tempo (em meses):</label>
+            <input type="number" id="tempo" placeholder="meses">
+            <button onclick="calcularJuros()">Calcular Juros</button>
+            <p id="resultadoJuros"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
